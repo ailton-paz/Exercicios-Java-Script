@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constatador de salário</title>
+    <style>
+        body {
+            background-color: rgb(42, 150, 245);
+            color: white;
+            font-size: normal 16pt;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vamos constatar seu salário!</h1>
+    <p name="sal"></p>
+    <script>
+        var salario = Number.parseFloat(window.prompt("Quanto você ganha por mês? R$: "))
+        //Formatação para string de salário --> .toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+        var minimo = salario >= 1621 ? `Seu salário é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e já é maior que o mínimo nacional!` : `Seu salário é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} e ainda precisa de ajustes para chegar até o mínimo nacional`
+
+        var a = window.document.getElementsByName('sal')[0]
+        a.innerText = minimo
+        a.style.fontSize = '18pt'
+    </script>
+    
+</body>
+</html>
