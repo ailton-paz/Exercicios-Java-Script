@@ -18,9 +18,10 @@ class Person {
     }
 }
 
-const newPerson = new Person("Beatriz", "Alves", 22);
+const newPerson = [new Person("Beatriz", "Alves", 22), new Person("Ailton", "Paz", 25)]
 
 // console.log(newPerson)
-newPerson.getFullName()
+newPerson[1].getFullName()
 Person.speak("Beatriz")
-newPerson.doubleAge()
+newPerson[1].doubleAge()
+console.log(Person)
