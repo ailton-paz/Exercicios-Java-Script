@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário — API</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Usuário</h1>
+    </header>
+
+    <main class="container">
+        <button id="loadBtn" class="btn">Carregar Usuário</button>
+        <div id="loading" class="loading" hidden>Carregando...</div>
+        <div id="error" class="error" hidden>Erro ao carregar dados</div>
+        
+        <div id="user" class="user-card" hidden>
+            <h2 id="userName"></h2>
+            <p><strong>Email:</strong> <span id="userEmail"></span></p>
+            <p><strong>Telefone:</strong> <span id="userPhone"></span></p>
+            <p><strong>Site:</strong> <span id="userWebSite"></span></p>
+            <p><strong>Empresa:</strong> <span id="userCompany"></span></p>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
